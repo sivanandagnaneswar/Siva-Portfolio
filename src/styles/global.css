@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Logo Color Palette */
+  --brand-green: #88c23f;
+  --blossom-blue: #3498db;
+  --blossom-orange: #f39c12;
+  --blossom-yellow: #f1c40f;
+  --blossom-black: black;
+
+  /* Primary Theme Variables */
+  --primary-color: var(--brand-green);
+  --primary-gradient: linear-gradient(135deg, var(--brand-green), #6fa32d);
+  --secondary-color: var(--blossom-blue);
+  --secondary-gradient: linear-gradient(135deg, var(--blossom-blue), #2980b9);
+  --accent-gradient: linear-gradient(135deg, var(--blossom-orange), var(--blossom-yellow));
+
+  /* UI Highlights & Gradients */
+  --text-gradient: linear-gradient(90deg, var(--brand-green) 0%, var(--blossom-blue) 40%, var(--blossom-orange) 80%, var(--blossom-black) 100%);
+  --btn-primary-bg: var(--primary-gradient);
+  --btn-primary-shadow: rgba(136, 194, 63, 0.3);
+  --btn-primary-shadow-hover: rgba(136, 194, 63, 0.45);
+  
+  --badge-color: #5c8b24;
+  --badge-bg: rgba(136, 194, 63, 0.08);
+  --badge-border: rgba(136, 194, 63, 0.16);
+  --badge-shadow: rgba(136, 194, 63, 0.06);
+  --badge-dot-gradient: linear-gradient(135deg, var(--brand-green), var(--blossom-orange));
+
+  /* Glow / Decorative Colors */
+  --glow-green: rgba(136, 194, 63, 0.22);
+  --glow-blue: rgba(52, 152, 219, 0.18);
+  --glow-orange: rgba(243, 156, 18, 0.15);
+  --glow-red: rgba(214, 48, 49, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(253, 253, 253);
+  color: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  /* Hide the scrollbar, keep scrolling */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* legacy Edge / IE */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;                /* Chrome / Safari */
+}
+
+button,
+input,
+textarea,
+a {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.app {
+  min-height: 100vh;
+}

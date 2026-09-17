@@ -1,0 +1,740 @@
+/* =========================================
+   FEATURES SECTION
+   PREMIUM FUTURISTIC INTRO THEME
+========================================= */
+
+.features-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 130px 7vw;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(139, 92, 246, 0.10),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(0, 229, 255, 0.08),
+      transparent 28%
+    ),
+    #070812;
+
+  color: #fff;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================================
+   SUBTLE GRID
+========================================= */
+
+.features-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 60px 60px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    transparent 90%
+  );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   BACKGROUND ORBS
+========================================= */
+
+.features-orb {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  pointer-events: none;
+}
+
+.features-orb-one {
+  width: 380px;
+  height: 380px;
+
+  left: -180px;
+  top: 20%;
+
+  background: rgba(112, 0, 255, 0.12);
+}
+
+.features-orb-two {
+  width: 300px;
+  height: 300px;
+
+  right: -120px;
+  top: 5%;
+
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.features-orb-three {
+  width: 280px;
+  height: 280px;
+
+  right: 25%;
+  bottom: -160px;
+
+  background: rgba(0, 229, 255, 0.08);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.features-header {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 760px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.section-label {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 8px 15px;
+
+  border-radius: 100px;
+
+  border: 1px solid rgba(139, 92, 246, 0.25);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.10),
+      rgba(0, 229, 255, 0.04)
+    );
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.15em;
+
+  margin-bottom: 25px;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.section-label::before {
+  content: "";
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 8px rgba(139, 92, 246, 0.9),
+    0 0 16px rgba(139, 92, 246, 0.5);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.features-header h2 {
+  margin: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(44px, 5vw, 72px);
+
+  line-height: 1.02;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 600;
+
+  color: #f7f7fa;
+}
+
+.features-header h2 span {
+  display: block;
+
+  margin-top: 5px;
+
+  background:
+    linear-gradient(
+      100deg,
+      #ffffff 5%,
+      #c9b6ff 38%,
+      #8b5cf6 65%,
+      #00e5ff 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  color: transparent;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.features-header p {
+  max-width: 620px;
+
+  margin: 25px auto 0;
+
+  color: rgba(230, 230, 240, 0.58);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   FEATURES GRID
+========================================= */
+
+.features-grid {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.feature-card {
+  position: relative;
+
+  min-height: 390px;
+
+  padding: 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  border-radius: 26px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* =========================================
+   CARD TOP LIGHT
+========================================= */
+
+.feature-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 10%;
+
+  width: 80%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(139, 92, 246, 0.7),
+      rgba(0, 229, 255, 0.45),
+      transparent
+    );
+
+  opacity: 0.8;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.feature-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(139, 92, 246, 0.28);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35),
+    0 0 45px rgba(112, 0, 255, 0.08);
+}
+
+
+/* =========================================
+   CARD GLOW
+========================================= */
+
+.card-glow {
+  position: absolute;
+
+  width: 240px;
+  height: 240px;
+
+  right: -100px;
+  bottom: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(139, 92, 246, 0.13);
+
+  filter: blur(65px);
+
+  pointer-events: none;
+
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.feature-card:hover .card-glow {
+  transform: scale(1.4);
+
+  opacity: 1;
+}
+
+
+/* =========================================
+   DIFFERENT CARD GLOWS
+========================================= */
+
+.feature-card-purple .card-glow {
+  background: rgba(139, 92, 246, 0.20);
+}
+
+.feature-card-blue .card-glow {
+  background: rgba(0, 140, 255, 0.18);
+}
+
+.feature-card-orange .card-glow {
+  background: rgba(0, 229, 255, 0.16);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.feature-icon {
+  position: relative;
+
+  z-index: 2;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.22),
+      rgba(0, 229, 255, 0.07)
+    );
+
+  box-shadow:
+    inset 0 0 20px rgba(139, 92, 246, 0.08),
+    0 0 25px rgba(112, 0, 255, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: rotate(-4deg) scale(1.08);
+
+  box-shadow:
+    0 0 30px rgba(139, 92, 246, 0.20),
+    inset 0 0 20px rgba(0, 229, 255, 0.08);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.feature-content {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: auto;
+
+  padding-top: 70px;
+}
+
+.feature-content h3 {
+  margin: 0 0 14px;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.025em;
+
+  color: #ffffff;
+}
+
+.feature-content p {
+  margin: 0;
+
+  max-width: 320px;
+
+  color: rgba(230, 230, 240, 0.57);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   ARROW BUTTON
+========================================= */
+
+.feature-arrow {
+  position: absolute;
+
+  z-index: 5;
+
+  right: 28px;
+  top: 28px;
+
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  text-decoration: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  background: rgba(255, 255, 255, 0.045);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.feature-arrow:hover {
+  transform: translate(3px, -3px);
+
+  color: #ffffff;
+
+  border-color: rgba(0, 229, 255, 0.35);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.22),
+      rgba(0, 229, 255, 0.10)
+    );
+
+  box-shadow:
+    0 0 25px rgba(139, 92, 246, 0.15);
+}
+
+
+/* =========================================
+   PURPLE CARD
+========================================= */
+
+.feature-card-purple {
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(139, 92, 246, 0.10),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+
+/* =========================================
+   BLUE CARD
+========================================= */
+
+.feature-card-blue {
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(0, 140, 255, 0.09),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+
+/* =========================================
+   INNOVATION / CYAN CARD
+========================================= */
+
+.feature-card-orange {
+  background:
+    radial-gradient(
+      circle at 75% 25%,
+      rgba(0, 229, 255, 0.08),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .features-section {
+    padding: 110px 5vw;
+  }
+
+  .features-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .feature-card:last-child {
+    grid-column: 1 / -1;
+
+    max-width: calc(50% - 11px);
+
+    width: 100%;
+
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .features-section {
+    padding: 100px 22px;
+  }
+
+  .features-header {
+    margin-bottom: 50px;
+  }
+
+  .features-header h2 {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .features-header p {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .feature-card {
+    min-height: 350px;
+
+    padding: 28px;
+
+    border-radius: 22px;
+  }
+
+  .feature-card:last-child {
+    grid-column: auto;
+
+    max-width: none;
+
+    margin: 0;
+  }
+
+  .feature-content {
+    padding-top: 60px;
+  }
+
+  .feature-content h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+  .features-section {
+    padding: 85px 18px;
+  }
+
+  .feature-card {
+    min-height: 330px;
+
+    padding: 24px;
+  }
+
+  .feature-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .feature-arrow {
+    right: 22px;
+    top: 22px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-content h3 {
+    font-size: 20px;
+  }
+
+  .feature-content p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .feature-card,
+  .feature-icon,
+  .feature-arrow,
+  .card-glow {
+    transition: none;
+  }
+}

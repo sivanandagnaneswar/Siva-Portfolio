@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+
+  padding: 100px 7vw 150px;
+
+  background:
+    radial-gradient(
+      circle at 75% 45%,
+      rgba(112, 0, 255, 0.22),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 0, 127, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 85%,
+      rgba(0, 240, 255, 0.10),
+      transparent 25%
+    ),
+    #070812;
+
+  color: #ffffff;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================================================
+   SUBTLE GRID
+========================================================= */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 60px 60px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    transparent 95%
+  );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LARGE BACKGROUND GLOW
+========================================================= */
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  right: 8%;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background: rgba(112, 0, 255, 0.13);
+
+  filter: blur(120px);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+
+  max-width: 720px;
+
+  padding-top: 20px;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 9px 17px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 100px;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 0.03em;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 28px;
+}
+
+
+/* Badge glowing dot */
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #00f0ff;
+
+  box-shadow:
+    0 0 8px #00f0ff,
+    0 0 18px rgba(0, 240, 255, 0.8);
+
+  animation: badgePulse 2s infinite;
+}
+
+
+@keyframes badgePulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.75);
+  }
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.hero-title {
+  margin: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(55px, 6.3vw, 96px);
+
+  line-height: 0.98;
+
+  font-weight: 600;
+
+  letter-spacing: -0.055em;
+
+  color: #f7f7fa;
+
+  max-width: 760px;
+}
+
+
+/* Gradient second line */
+
+.hero-title span {
+  display: block;
+
+  background:
+    linear-gradient(
+      100deg,
+      #ffffff 5%,
+      #c9b6ff 40%,
+      #8b5cf6 65%,
+      #00e5ff 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+  max-width: 650px;
+
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  color: rgba(230, 230, 240, 0.66);
+
+  font-size: 16px;
+
+  line-height: 1.85;
+
+  font-weight: 400;
+
+  letter-spacing: 0.005em;
+}
+
+
+/* =========================================================
+   MODEL CONTAINER
+========================================================= */
+
+.hero-model-container {
+  position: relative;
+
+  z-index: 4;
+
+  height: 620px;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================================================
+   MODEL GLOW
+========================================================= */
+
+.model-glow {
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(112, 0, 255, 0.22) 0%,
+      rgba(0, 240, 255, 0.10) 35%,
+      transparent 70%
+    );
+
+  filter: blur(20px);
+
+  animation: modelGlow 5s ease-in-out infinite;
+
+  pointer-events: none;
+}
+
+
+@keyframes modelGlow {
+
+  0%,
+  100% {
+    transform: scale(0.95);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   CANVAS
+========================================================= */
+
+.hero-model-container canvas {
+  position: relative;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   MARQUEE
+========================================================= */
+
+.hero-marquee {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   MARQUEE TRACK
+========================================================= */
+
+.hero-marquee-track {
+  display: flex;
+
+  width: max-content;
+
+  animation:
+    heroMarquee 28s linear infinite;
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   MARQUEE GROUP
+========================================================= */
+
+.hero-marquee-group {
+  display: flex;
+
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   MARQUEE ITEM
+========================================================= */
+
+.hero-marquee-item {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 28px;
+
+  margin-right: 55px;
+
+  white-space: nowrap;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MARQUEE DOT
+========================================================= */
+
+.hero-marquee-dot {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 8px rgba(139, 92, 246, 0.9);
+}
+
+
+/* =========================================================
+   MARQUEE ANIMATION
+========================================================= */
+
+@keyframes heroMarquee {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* =========================================================
+   SIDE DECORATION
+========================================================= */
+
+.hero-content::before {
+  content: "";
+
+  position: absolute;
+
+  left: -35px;
+  top: 10px;
+
+  width: 2px;
+  height: 90px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #8b5cf6,
+      transparent
+    );
+
+  opacity: 0.7;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .hero {
+    grid-template-columns: 1fr 0.9fr;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .hero-title {
+    font-size: clamp(
+      52px,
+      6vw,
+      76px
+    );
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-model-container {
+    height: 540px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding:
+      110px
+      24px
+      120px;
+
+    text-align: center;
+  }
+
+
+  .hero-content {
+    max-width: 650px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding-top: 0;
+  }
+
+
+  .hero-content::before {
+    display: none;
+  }
+
+
+  .hero-badge {
+    margin-bottom: 22px;
+
+    font-size: 12px;
+  }
+
+
+  .hero-title {
+    font-size: clamp(
+      46px,
+      13vw,
+      68px
+    );
+
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+  }
+
+
+  .hero-description {
+    margin-top: 24px;
+
+    max-width: 600px;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+
+  .hero-model-container {
+    width: 100%;
+
+    height: 430px;
+
+    margin-top: -15px;
+  }
+
+
+  .model-glow {
+    width: 330px;
+    height: 330px;
+  }
+
+
+  .hero-marquee {
+    height: 65px;
+  }
+
+
+  .hero-marquee-item {
+    font-size: 11px;
+
+    margin-right: 38px;
+
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding:
+      100px
+      18px
+      100px;
+  }
+
+
+  .hero-title {
+    font-size: 44px;
+  }
+
+
+  .hero-description {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  .hero-model-container {
+    height: 360px;
+
+    margin-top: 0;
+  }
+
+
+  .model-glow {
+    width: 280px;
+    height: 280px;
+  }
+
+
+  .hero-marquee {
+    height: 58px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-marquee-track,
+  .badge-dot,
+  .model-glow {
+    animation: none;
+  }
+
+}
