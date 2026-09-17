@@ -7,19 +7,16 @@
   top: 18px;
   left: 50%;
   transform: translateX(-50%);
-
   width: min(92%, 1380px);
   z-index: 1000;
-
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 18px;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.025)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.025)
+  );
 
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -36,10 +33,10 @@
     box-shadow 0.35s ease;
 }
 
-
 /* =========================================
    SUBTLE PURPLE GLOW
 ========================================= */
+
 .logo-mark {
   display: flex;
   align-items: center;
@@ -47,17 +44,15 @@
 
   width: 48px;
   height: 48px;
-
   border-radius: 50%;
 
   border: 1px solid rgba(139, 92, 246, 0.25);
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(139, 92, 246, 0.14),
-      rgba(0, 229, 255, 0.06)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.14),
+    rgba(0, 229, 255, 0.06)
+  );
 
   box-shadow:
     0 0 25px rgba(139, 92, 246, 0.10),
@@ -74,16 +69,13 @@
 .logo-mark img {
   width: 34px;
   height: 34px;
-
   object-fit: contain;
-
   display: block;
+  border-radius: 50%;
 
   transition:
     transform 0.3s ease,
     filter 0.3s ease;
-
-    border-radius:50%;
 }
 
 .logo-mark:hover {
@@ -99,13 +91,15 @@
 .logo-mark:hover img {
   transform: scale(1.08);
 
-  filter:
-    drop-shadow(0 0 8px rgba(139, 92, 246, 0.5));
+  filter: drop-shadow(
+    0 0 8px rgba(139, 92, 246, 0.5)
+  );
 }
+
 .navbar::before {
   content: "";
-  position: absolute;
 
+  position: absolute;
   top: -1px;
   left: 12%;
 
@@ -123,7 +117,6 @@
   filter: blur(1px);
 }
 
-
 /* =========================================
    CONTAINER
 ========================================= */
@@ -138,7 +131,6 @@
   padding: 0 25px;
 }
 
-
 /* =========================================
    LOGO
 ========================================= */
@@ -150,10 +142,8 @@
   text-decoration: none;
 
   font-family: "Space Grotesk", sans-serif;
-
   font-size: 19px;
   font-weight: 600;
-
   letter-spacing: -0.03em;
 
   transition: all 0.3s ease;
@@ -184,19 +174,10 @@
 }
 
 .navbar-logo:hover span {
-  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.35));
+  filter: drop-shadow(
+    0 0 10px rgba(139, 92, 246, 0.35)
+  );
 }
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-}
-
-.navbar-logo:hover {
-  transform: translateY(-1px);
-}
-
 
 /* =========================================
    DESKTOP LINKS
@@ -205,7 +186,6 @@
 .navbar-links {
   display: flex;
   align-items: center;
-
   gap: 38px;
 }
 
@@ -213,11 +193,9 @@
   position: relative;
 
   color: rgba(255, 255, 255, 0.62);
-
   text-decoration: none;
 
   font-family: "DM Sans", sans-serif;
-
   font-size: 14px;
   font-weight: 500;
 
@@ -228,18 +206,15 @@
 
 .navbar-links a:hover {
   color: #ffffff;
-
   transform: translateY(-1px);
 }
 
-
-/* underline glow */
+/* Underline glow */
 
 .navbar-links a::after {
   content: "";
 
   position: absolute;
-
   left: 50%;
   bottom: -8px;
 
@@ -247,7 +222,6 @@
   height: 2px;
 
   transform: translateX(-50%);
-
   border-radius: 10px;
 
   background: linear-gradient(
@@ -266,28 +240,23 @@
   width: 22px;
 }
 
-
 /* =========================================
    CONTACT BUTTON
 ========================================= */
 
 .navbar-button {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
 
   min-width: 125px;
   height: 42px;
-
   padding: 0 20px;
 
   border-radius: 12px;
-
   text-decoration: none;
 
   font-family: "DM Sans", sans-serif;
-
   font-size: 13px;
   font-weight: 600;
 
@@ -295,12 +264,11 @@
 
   border: 1px solid rgba(139, 92, 246, 0.4);
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(139, 92, 246, 0.22),
-      rgba(0, 229, 255, 0.08)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.22),
+    rgba(0, 229, 255, 0.08)
+  );
 
   box-shadow:
     inset 0 0 20px rgba(139, 92, 246, 0.08),
@@ -318,18 +286,16 @@
 
   border-color: rgba(0, 229, 255, 0.55);
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(139, 92, 246, 0.35),
-      rgba(0, 229, 255, 0.15)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.35),
+    rgba(0, 229, 255, 0.15)
+  );
 
   box-shadow:
     0 0 25px rgba(139, 92, 246, 0.2),
     0 0 45px rgba(0, 229, 255, 0.08);
 }
-
 
 /* =========================================
    MOBILE MENU BUTTON
@@ -337,21 +303,17 @@
 
 .menu-button {
   display: none;
-
   align-items: center;
   justify-content: center;
 
   width: 42px;
   height: 42px;
-
   border-radius: 12px;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
-
   background: rgba(255, 255, 255, 0.05);
 
   color: #ffffff;
-
   cursor: pointer;
 
   transition: 0.3s ease;
@@ -366,18 +328,15 @@
     0 0 20px rgba(139, 92, 246, 0.15);
 }
 
-
 /* =========================================
    MOBILE MENU
 ========================================= */
 
 .mobile-menu {
   display: none;
-
   overflow: hidden;
 
   max-height: 0;
-
   opacity: 0;
 
   transition:
@@ -390,16 +349,13 @@
   opacity: 1;
 }
 
-
 /* =========================================
    MOBILE LINKS
 ========================================= */
 
 .mobile-nav-links {
   display: flex;
-
   flex-direction: column;
-
   gap: 5px;
 
   padding: 10px 18px 20px;
@@ -407,15 +363,12 @@
 
 .mobile-nav-links a {
   padding: 14px 12px;
-
   border-radius: 10px;
 
   color: rgba(255, 255, 255, 0.68);
-
   text-decoration: none;
 
   font-family: "DM Sans", sans-serif;
-
   font-size: 14px;
   font-weight: 500;
 
@@ -425,23 +378,20 @@
 .mobile-nav-links a:hover {
   color: #ffffff;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(139, 92, 246, 0.12),
-      rgba(0, 229, 255, 0.04)
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 0.12),
+    rgba(0, 229, 255, 0.04)
+  );
 
   transform: translateX(4px);
 }
-
 
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 900px) {
-
   .navbar-links {
     gap: 22px;
   }
@@ -455,24 +405,19 @@
   }
 }
 
-
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 720px) {
-
   .navbar {
     top: 12px;
-
     width: calc(100% - 24px);
-
     border-radius: 16px;
   }
 
   .navbar-container {
     height: 64px;
-
     padding: 0 15px;
   }
 
@@ -494,13 +439,11 @@
   }
 }
 
-
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 420px) {
-
   .navbar-logo {
     font-size: 15px;
   }
@@ -515,13 +458,11 @@
   }
 }
 
-
 /* =========================================
    REDUCED MOTION
 ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
-
   .navbar,
   .navbar-logo,
   .navbar-links a,
