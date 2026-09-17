@@ -27,6 +27,8 @@
     #050b18;
   color: #ffffff;
   overflow: hidden;
+  max-width:100%;
+  width:100%;
 }
 
 /* =========================================

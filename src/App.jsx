@@ -20,13 +20,7 @@ function App() {
     <BrowserRouter>
       <AnimatePresence mode="wait">
 
-        {showIntro ? (
-          <Intro
-            key="intro"
-            onEnter={() => setShowIntro(false)}
-          />
-        ) : (
-          <div key="portfolio">
+         <div key="portfolio">
             <Navbar />
             <Hero />
            
@@ -35,7 +29,6 @@ function App() {
        
             <Footer />
           </div>
-        )}
 
       </AnimatePresence>
     </BrowserRouter>
